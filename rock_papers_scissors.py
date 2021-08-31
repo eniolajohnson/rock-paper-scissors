@@ -5,3 +5,10 @@ def play():
   user = input()
   computer = random.choice(['r', 'p', 's'])
 
+  
+def you_won(player, comp):
+  if (player == 'r' and comp == 's') \
+    or (player == 'p' and comp == 'r') \
+    or (player == 's' and comp == 'p'):
+    return True
+
